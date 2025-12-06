@@ -4,5 +4,8 @@ const personajeController = require('../controller/personajeController');
 
 router.get('/', personajeController.getPersonajes);
 router.get('/:id', personajeController.getPersonajesById);
+router.post('/', personajeController.postPersonaje);
+router.put('/:id', personajeController.putPersonaje);
+router.delete('/:id', personajeController.deletePersonaje);
 
 module.exports = router;
